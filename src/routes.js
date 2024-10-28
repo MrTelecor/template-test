@@ -1,4 +1,5 @@
 import React from 'react'
+import PruebaPage from './views/PruebaPage.js';
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
@@ -97,6 +98,8 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
   { path: '/widgets', name: 'Widgets', element: Widgets },
+  { path: '/prueba', name: 'Prueba', component: PruebaPage },
+  
 ]
 
 export default routes
